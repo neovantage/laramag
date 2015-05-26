@@ -1,0 +1,9 @@
+git remote add origin https://github.com/neovantage/laramag.git
+
+git config --global user.email "opstec_mohsin@hotmail.com"
+git config --global user.name "Mohsin Rafique"
+
+git pull origin master
+
+
+
