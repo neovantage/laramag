@@ -7,10 +7,13 @@
  */
 
 class Post extends Eloquent {
- 
+    
+    protected $fillable = ['title', 'content'];
+
+
     public function comments()
     {
-        return $this->hasMany('Comment');
+        return $this->hasMany('Comment')->where('approved', '=', 1);
     }
  
 }
